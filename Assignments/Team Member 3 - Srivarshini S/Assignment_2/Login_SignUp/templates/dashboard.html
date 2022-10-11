@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<div class="w3-display-middle w3-text-black ">
+    <h2 style="font-size: 40px;">Welcome {{userName}} !</h2>
+    <p><b style="justify-self:center">Start Hunting Jobs</b></p>   
+</div>
+
+{% endblock %}

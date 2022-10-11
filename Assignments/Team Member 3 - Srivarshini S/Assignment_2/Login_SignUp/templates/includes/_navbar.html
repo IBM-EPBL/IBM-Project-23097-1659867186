@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm fixed-top" style="padding-top:0px; padding-bottom:0px">
+    <a class="navbar-brand" href="/"><img src="/static/image/icon.png" style="width:50px; height:50px; "></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            {% if session.logged_in %}
+            <li class="nav-item"><a href="/" class="nav-link"><span class=""></span> Home</a></li>
+            <li class="nav-item"><a href="/logout" class="nav-link"><span class=""></span> Logout</a></li>
+            {% else %}
+            <li class="nav-item"><a href="/login" class="nav-link"><span class=""></span> Login</a></li>
+            <li class="nav-item"><a href="/register" class="nav-link"><span class=""></span> Signup</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
