@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="/static/image/indexph_img.jpg" style="width:1500px; height:600px">
+      <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h2 style="font-size: 40px;">Easiee Hire</h2>
+        <p><b>We have the Best Job for you !</b></p>   
+      </div>
+    </div>
+  
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+      <h2 class="w3-wide">EASIEE HIRE</h2>
+      <p class="w3-opacity"><i>Your Hiring Partner</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+          <p>Discover Jobs</p>
+          <img src="/static/image/discover.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%; height: 120px;" >
+        </div>
+        <div class="w3-third">
+          <p>Prepare for Interview</p>
+          <img src="/static/image/interview.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%;height: 120px;">
+        </div>
+        <div class="w3-third">
+          <p>Grow your Career</p>
+          <img src="/static/image/growCareer.png" class="w3-round" alt="Random Name" style="width:60%;height: 120px;">
+        </div>
+      </div>
+    </div>
+  <!-- End Page Content -->
+  </div>
+  
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+  </script>
+{% endblock %}

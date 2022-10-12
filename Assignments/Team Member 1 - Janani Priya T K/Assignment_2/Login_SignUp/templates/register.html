@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<div class="container" style="background-color: rgb(0, 0, 0); padding: 30px; margin-top: 100px; border-radius: 20px; width: 500px">
+<div >
+    <h2 style="text-align: center; color: #ffffff; margin-bottom: 30px;">Hey Newbie ! Join Us</h2>
+    {% from "includes/_formhelpers.html" import render_field %}
+    <form method="POST" action="">
+        <div class="form-group">
+            {{render_field(form.email, class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{render_field(form.username, class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{render_field(form.password, class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{render_field(form.roll, class="form-control")}}
+        </div>
+        <p>
+            <input type="submit" class="btn " value="Sign Up" style="margin-left: 180px; margin-top: 20px;">
+        </p>
+    </form>
+</div>
+</div>
+
+{% endblock %}
