@@ -22,4 +22,4 @@ To develop an end-to-end web application capable of displaying the current job o
 
 ## Project Progress :
 - [ ] Ideation Phase
-    -[ ] Empathy Map Canva
+    - [X] Empathy Map Canva
