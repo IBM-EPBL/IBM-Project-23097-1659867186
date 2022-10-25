@@ -40,3 +40,6 @@ To develop an end-to-end web application capable of displaying the current job o
     - [X] Functional Requirement
     - [X] Technology Architecture
     - [X] Data Flow Diagram
+- [ ] Implementing Web Application
+    - [ ] Create UI to interact with Application
+    - [ ] Create IBM DB2 and connect with Python
