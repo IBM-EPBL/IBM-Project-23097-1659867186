@@ -55,7 +55,7 @@ To develop an end-to-end web application capable of displaying the current job o
 - [ ] Developing a ChatBot
     - [ ] Build ChatBot and Integrate with App
 
-- [ ] Project Planning Phase
+- [X] Project Planning Phase
     - [X] Prepare Milestone and Activity List
     - [X] Sprint Delivery Plan
 
