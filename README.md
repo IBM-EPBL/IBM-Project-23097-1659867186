@@ -45,9 +45,9 @@ To develop an end-to-end web application capable of displaying the current job o
     - [X] Technology Architecture
     - [X] Data Flow Diagram
    
-- [ ] Implementing Web Application
-    - [ ] Create UI to interact with Application
-    - [ ] Create IBM DB2 and connect with Python
+- [X] Implementing Web Application
+    - [X] Create UI to interact with Application
+    - [X] Create IBM DB2 and connect with Python
     
 - [ ] Integrating Sendgrid Service
     - [ ] Sendgrid integration with Python
