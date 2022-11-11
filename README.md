@@ -60,7 +60,7 @@ To develop an end-to-end web application capable of displaying the current job o
     - [X] Sprint Delivery Plan
 
 - [ ] Project Development Phase
-    - [ ] Delivery of Sprint-1
+    - [X] Delivery of Sprint-1
     - [ ] Delivery of Sprint-2
     - [ ] Delivery of Sprint-3
     - [ ] Delivery of Sprint-4
