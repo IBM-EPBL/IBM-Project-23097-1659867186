@@ -49,8 +49,8 @@ To develop an end-to-end web application capable of displaying the current job o
     - [X] Create UI to interact with Application
     - [X] Create IBM DB2 and connect with Python
     
-- [ ] Integrating Sendgrid Service
-    - [ ] Sendgrid integration with Python
+- [X] Integrating Sendgrid Service
+    - [X] Sendgrid integration with Python
     
 - [ ] Developing a ChatBot
     - [ ] Build ChatBot and Integrate with App
@@ -59,9 +59,9 @@ To develop an end-to-end web application capable of displaying the current job o
     - [X] Prepare Milestone and Activity List
     - [X] Sprint Delivery Plan
 
-- [ ] Project Development Phase
+- [X] Project Development Phase
     - [X] Delivery of Sprint-1
-    - [ ] Delivery of Sprint-2
+    - [X] Delivery of Sprint-2
     - [ ] Delivery of Sprint-3
     - [ ] Delivery of Sprint-4
 
