@@ -1,0 +1,11 @@
+Flask 
+ibm_db
+Flask-WTF
+email-validator
+requests
+Jinja2
+boto3
+ibm-cos-sdk
+pyinstaller
+ibm-cos-sdk-core
+ibm-cos-sdk-s3transfer
