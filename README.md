@@ -1,20 +1,6 @@
 # IBM-Project-23097-1659867186
 
-
-|      **Project Name**     | Skill And Job Recommender |
-|:---------------------:|:------------------------------:|
-|         **Domain**        |  Cloud Application Development |
-|        **Team ID**        |  PNT2022TMID23059 |
-
-
-## __Team Size : 4__
-
-
-|Team Leader :|SHANMUGA PRIYA M|
-| ------------|---------------|              
-|Team member 1 :| SRIVARSHINI S|
-|Team member 2 :| POOJHA KEERTHI SS|
-|Team member 3 :| JANANI PRIYA TK|
+![Project Thumbnail](Project Thumbnail.png)
 
 ## Project Description:
 To develop an end-to-end web application capable of displaying the current job openings based on the user skillset.  The user and their information are stored in the Database. On the other hand recruiters can post jobs and shortlist candidates. Users can interact with the chatbot and can get the recommendations based on their skills. We can use a **Job search API** to get the current job openings in the market which will fetch the data directly from the webpage. At the same time users can enhance their skills with courses recommended by our website vis **Udemy API**.  
