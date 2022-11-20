@@ -1,6 +1,6 @@
 # IBM-Project-23097-1659867186
 
-![Project Thumbnail](Project Thumbnail.png)
+![ProjectThumbnail](ProjectThumbnail.png)
 
 ## Project Description:
 To develop an end-to-end web application capable of displaying the current job openings based on the user skillset.  The user and their information are stored in the Database. On the other hand recruiters can post jobs and shortlist candidates. Users can interact with the chatbot and can get the recommendations based on their skills. We can use a **Job search API** to get the current job openings in the market which will fetch the data directly from the webpage. At the same time users can enhance their skills with courses recommended by our website vis **Udemy API**.  
