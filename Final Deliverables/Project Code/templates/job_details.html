@@ -1,0 +1,146 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<main>
+
+    <!-- Hero Area Start-->
+    <div class="slider-area ">
+        <div class="single-slider section-overly d-flex align-items-center"
+            style="background: -webkit-linear-gradient(left, #fc4e29, #ff3250) !important;"
+            style="height: 500px !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                            <h2 style="margin: 100px 0px;"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Area End -->
+    <!-- job post company Start -->
+    <div class="job-post-company pt-50 pb-120">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Left Content -->
+                <div class="col-xl-7 col-lg-8">
+                    <!-- job single -->
+                    <div class="single-job-items mb-50">
+                        <div class="job-items">
+                            <div class="company-img company-img-details">
+                                <a href="#"><img src="{{company_item['COMPANYLOGO']}}" alt="" style="width:80px"
+                                        height="80px"></a>
+                            </div>
+                            <div class="job-tittle" style="width:460px">
+                                <a href="#">
+                                    
+                                </a>
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- job single End -->
+
+                    <div class="job-post-details">
+                        <div class="post-details1 mb-50">
+                            <!-- Small Section Tittle -->
+                            <div class="small-section-tittle">
+                                <h4>Job Description</h4>
+                            </div>
+                            <p></p>
+                        </div>
+                        <div class="post-details2  mb-50">
+                            <!-- Small Section Tittle -->
+                    </div>
+
+                </div>
+                <!-- Right Content -->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="post-details3  mb-50">
+                        <!-- Small Section Tittle -->
+                        <div class="small-section-tittle">
+                            <h4>Job Overview</h4>
+                        </div>
+                        <ul>
+                          
+                        </ul>
+                        <div class="apply-btn2">
+                            <button class="btn " data-toggle="modal" data-target="#my-modal">Apply Now</button>
+                            <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog  modal-dialog-centered justify-content-center "
+                                    role="document">
+                                    <div class="modal-content  border-0 mx-3">
+                                        <div class="modal-body  p-0">
+                                            <div class="card text-center">
+                                                <div class="card-header pb-0 bg-white border-0">
+                                                    <div class="row">
+                                                        <div class="col ml-auto"><button type="button" class="close"
+                                                                data-dismiss="modal" aria-label="Close"> <span
+                                                                    aria-hidden="true">&times;</span> </button></div>
+                                                    </div><img class="submit-appln-img"
+                                                        src="../static/images/submitApplication.png"
+                                                        class="img-fluid mt-5" />
+                                                    <h3>Submit Application</h3>
+                                                </div>
+                                                <div class="card-body px-sm-5 mb-5">
+                                                    <br>
+                                                    <form action="/submit_application" method="post"
+                                                        enctype="multipart/form-data">
+                                                        <div class="row justify-content-center">
+
+                                                            <div class="col">
+                                                                <input type="submit"
+                                                                    class="btn btn-inverse btn-block  font-weight-bold  text-uppercase"
+                                                                    value="Edit Profile" name="task">
+                                                            </div>
+                                                            <div class="col">
+                                                                <input type="hidden" name="jobid" value="{{item['JOBID']}}">
+                                                                <input type="hidden" name="cname" value="{{item['COMPANYNAME']}}">
+                                                                <input type="submit"
+                                                                    class="btn  btn-block   font-weight-bold text-uppercase"
+                                                                    value="Submit Application" name="task">
+                                                            </div>
+
+                                                        </div>
+                                                        <form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- job post company End -->
+
+</main>
+<script>
+    jQuery(document).ready(function ($) {
+        //open popup
+        $('.cd-popup-trigger').on('click', function (event) {
+            event.preventDefault();
+            $('.cd-popup').addClass('is-visible');
+        });
+
+        //close popup
+        $('.cd-popup').on('click', function (event) {
+            if ($(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup')) {
+                event.preventDefault();
+                $(this).removeClass('is-visible');
+            }
+        });
+        //close popup when clicking the esc keyboard button
+        $(document).keyup(function (event) {
+            if (event.which == '27') {
+                $('.cd-popup').removeClass('is-visible');
+            }
+        });
+    });
+</script>
+{% endblock %}

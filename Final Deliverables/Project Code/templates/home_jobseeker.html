@@ -1,0 +1,142 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <main>
+<!-- Search Bar -->
+        <div class="container" style="margin-top:100px; margin-bottom: 50px;">
+            <!-- Search Box -->
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8">
+                    <!-- form -->
+                    <form action="#" class="search-box">
+                        <div class="input-form">
+                            <input type="text" placeholder="Job Tittle or keyword">
+                        </div>
+                        <div class="search-form">
+                            <a href="#">Find job</a>
+                        </div>	
+                    </form>	
+                </div>
+            </div>
+        </div>
+        <h5><a href="job_listing.html">AI/ML</a></h5>
+                                <!-- <span>(658)</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Btn -->
+                <!-- Section Button -->
+        </div>
+        <!-- Our Services End -->
+        <!-- Online CV Area Start -->
+         <div class="online-cv cv-bg section-overly pt-90 pb-120"  style="background: -webkit-linear-gradient(left, #fc4e29, #ff3250) !important;;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="cv-caption text-center">
+                            <p class="pera1"></p>
+                            <p class="pera2"> Make a Difference with Your Online Resume!</p>
+                            <a href="#" class="border-btn2 border-btn4">Create a Free Resume Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Online CV Area End-->
+        <!-- Featured_job_start -->
+        <section class="featured-job-area feature-padding">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle text-center">
+                            <h2>Featured Jobs</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <!-- single-job-content -->
+                        
+                        <!-- single-job-content -->
+                        
+                         <!-- single-job-content -->
+                        <div class="single-job-items mb-30">
+                            <div class="job-items">
+                                <div class="company-img">
+                                    <a href="job_details.html"><img src="../static/images/companies/presidio.jpeg" alt="" height="80px" style="width: 80px;"></a>
+                                </div>
+                                <div class="job-tittle">
+                                    <a href="job_details.html"><h4>Associate Engineer</h4></a>
+                                    <ul>
+                                        <li><i class="fas fa-building"></i>Presidio</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Coimbatore</li>
+                                        <li><i class="fas fa-clock"></i>Full Time</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items-link f-right">
+                                <a href="job_details.html">View Details</a>
+                                <!-- <span>7 hours ago</span> -->
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured_job_end -->
+        <!-- How  Apply Process Start-->
+        <div class="apply-process-area apply-bg pt-20 pb-150" data-background="">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle text-center">
+                            <h2>Apply process</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apply Process Caption -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-process text-center mb-30">
+                            <div class="process-ion">
+                                <span class="flaticon-search"></span>
+                            </div>
+                            <div class="process-cap">
+                               <h5>1. Search a job</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-process text-center mb-30">
+                            <div class="process-ion">
+                                <span class="flaticon-curriculum-vitae"></span>
+                            </div>
+                            <div class="process-cap">
+                               <h5>2. Apply for job</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-process text-center mb-30">
+                            <div class="process-ion">
+                                <span class="flaticon-tour"></span>
+                            </div>
+                            <div class="process-cap">
+                               <h5>3. Get your job</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!-- How  Apply Process End-->
+
+    </main>
+    {% include 'includes/_footer.html' %}
+{% endblock %}
