@@ -52,8 +52,8 @@ To develop an end-to-end web application capable of displaying the current job o
 - [X] Integrating Sendgrid Service
     - [X] Sendgrid integration with Python
     
-- [ ] Developing a ChatBot
-    - [ ] Build ChatBot and Integrate with App
+- [X] Developing a ChatBot
+    - [X] Build ChatBot and Integrate with App
 
 - [X] Project Planning Phase
     - [X] Prepare Milestone and Activity List
@@ -62,10 +62,10 @@ To develop an end-to-end web application capable of displaying the current job o
 - [X] Project Development Phase
     - [X] Delivery of Sprint-1
     - [X] Delivery of Sprint-2
-    - [ ] Delivery of Sprint-3
-    - [ ] Delivery of Sprint-4
+    - [X] Delivery of Sprint-3
+    - [X] Delivery of Sprint-4
 
-- [ ] Deployment of App in IBM Cloud
-    - [ ] Containerize the App
-    - [ ] Upload Image to IBM Container Registry
-    - [ ] Deploy in Kubernetes Cluster
+- [X] Deployment of App in IBM Cloud
+    - [X] Containerize the App
+    - [X] Upload Image to IBM Container Registry
+    - [X] Deploy in Kubernetes Cluster
